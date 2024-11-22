@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://img.freepik.com/premium-photo/collage-weather-conditions-concept-weather-forecast-featuring-rain-lightning-sun-other_817921-2435.jpg?w=360");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(232, 150, 129, 0.9);
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  gap: 1rem;
+}
+
+.img_section {
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #544e4e 10%, #e4586b 100%);
+}
+
+.default_info {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.default_info img {
+  width: 70%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.default_info h2 {
+  font-size: 3rem;
+}
+
+.default_info h3 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.weather_temp {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 0.5rem 0;
+}
+
+/* Content Section */
+.content_section {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content_section form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input_field {
+  flex: 1;
+  outline: none;
+  background: transparent;
+  border: 1px solid #37474f;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.btn_search {
+  padding: 0.8rem;
+  border: none;
+  background: #ff986c;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn_location {
+  padding: 0.8rem;
+  border: none;
+  background: #ff986c;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+.day_info .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.day_info .content .title {
+  font-weight: 600;
+}
+
+.list_content ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.list_content ul li {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.list_content ul li:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #232931;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.list_content ul li img {
+  width: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.icons {
+  opacity: 0;
+}
+
+.icons.fadeIn {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+	
